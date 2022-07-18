@@ -27,7 +27,7 @@ If you haven’t used tinyurl.com before, please try creating a new shortened UR
 
 ### Key points
 - Create a group database `groupXDatabase`. You can clean the db you previously used and reuse that.
-- This time each group should have a *single git branch*. Coordinate amongst yourselves by ensuring every next person pulls the code last pushed by a team mate. You branch will be checked as part of the demo. Branch name should follow the naming convention `project/urlShortnerGroupX`
+- This time each group should have a *single git branch*. Coordinate amongst yourselves by ensuring every next person pulls the code last pushed by a team mate. You branch will be checked as part of the demo. Branch name should follow the naming convention `project/urlShortenerGroupX`
 - Follow the naming conventions exactly as instructed. The backend code will be integrated with the front-end application which means any mismatch in the expected request body will lead to failure in successful integration.
 
 ### Models
@@ -37,10 +37,10 @@ If you haven’t used tinyurl.com before, please try creating a new shortened UR
 ```
 
 ### POST /url/shorten
-- Create a short URL for an original url recieved in the request body.
+- Create a short URL for an original url received in the request body.
 - The baseUrl must be the application's baseUrl. Example if the originalUrl is http://abc.com/user/images/name/2 then the shortened url should be http://localhost:3000/xyz
 - Return the shortened unique url. Refer [this](#url-shorten-response) for the response
-- Ensure the same response is returned for an original url everytime
+- Ensure the same response is returned for an original url every time
 - Return HTTP status 400 for an invalid request
 
 ### GET /:urlCode
